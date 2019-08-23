@@ -1,9 +1,9 @@
 -- Create the burgers_db.
-DROP DATABASE IF EXISTS burger_db;
-CREATE DATABASE burger_db;
+DROP DATABASE IF EXISTS burgers_db;
+CREATE DATABASE burgers_db;
 
 -- Switch to or use the burgers_db.
-USE burger_db;
+USE burgers_db;
 
 -- Create a burgers table with these fields:
 CREATE table burgers(
@@ -15,4 +15,6 @@ burger_name varchar (50) not null,
 devoured boolean,
 Primary key (id)
 );
+
+Select * from burgers;
 
