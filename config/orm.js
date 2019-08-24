@@ -55,7 +55,5 @@ update: function(table, objColVals, condition, bcol) {
 }
 };
 
-
-}
 // Export the ORM object in module.exports.
 module.exports = orm;

@@ -1,37 +1,36 @@
-<h1>Burgers</h1>
+<div class="jumbotron">
 
-<h2>Eat-Da-Burger!</h2>
+  <h1 class="display-4">Eat-Da-Burger!</h1>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{>burgers/burgers-block devoured=false}}
-    {{/unless}}
-  {{/each}}
+  <form class="was-validated">
+    <div class="mb-3">
+      <label for="burger_name validationTextarea">Burger Name</label>
+      <textarea class="new-burger form-control is-invalid" id="id" placeholder="Enter Burger Name"></textarea>
+      <div class="invalid-feedback">
+        Please enter a burger name in the textarea.
+      </div>
+    </div>
+    <a class="btn btn-primary btn-lg" role="button">Submit</a>
+  </form>
+
+  <p>Enter the burger you want to eat! Click the "Submit" button.</p>
+</div>
+
+<div class="container">
+<div class="col-auto">
+  <ul>
+{{#each burgers}}
+{{#unless devoured}}
+{{>burgers/burgers-devour devoured=false}}
+{{/unless}}
+{{/each}}
 </ul>
-
-
-<ul>
+</div>
+<div class="col-auto">
   {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burgers-block devoured=true}}
-    {{/if}}
+  {{#if devoured}}
+  {{> burgers/burgers-devour devoured=true}}
+  {{/if}}
   {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-{{!-- 
-  <div class="form-group">
-    <label for="slee">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div> --}}
-
-  <button type="submit">Submit</button>
-</form>
+</div>
+</div>

@@ -1,0 +1,30 @@
+.body{
+    background-color: black;
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-justify: auto;
+    color: white;
+}
+
+
+
+/* li {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+   */
