@@ -3,20 +3,20 @@
 var orm = require("../config/orm");
 
 var burger = {
-  selectAll: function(bcol) {
+  selectAll: function(cb) {
     orm.selectAll("burgers", function(res) {
-      bcol(res);
+      cb(res);
     });
   },
   // The variables cols and vals are arrays.
-  create: function(cols, vals, bcol) {
+  create: function(cols, vals, cb) {
     orm.create("burgers", cols, vals, function(res) {
-      bcol(res);
+      cb(res);
     });
   },
-  update: function(objColVals, condition, bcol) {
+  update: function(objColVals, condition, cb) {
     orm.update("burgers", objColVals, condition, function(res) {
-      bcol(res);
+      cb(res);
     });
   }
 };

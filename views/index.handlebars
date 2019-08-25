@@ -1,19 +1,15 @@
-<div class="jumbotron">
+<div class="container">
 
-  <h1 class="display-4">Eat-Da-Burger!</h1>
+  <h3 class="display-4" id="heading">Eat-Da-Burger!</h3>
 
-  <form class="was-validated">
-    <div class="mb-3">
-      <label for="burger_name validationTextarea">Burger Name</label>
-      <textarea class="new-burger form-control is-invalid" id="id" placeholder="Enter Burger Name"></textarea>
-      <div class="invalid-feedback">
-        Please enter a burger name in the textarea.
-      </div>
-    </div>
-    <a class="btn btn-primary btn-lg" role="button">Submit</a>
-  </form>
-
+  <form>
+  <div class="form-group">
+    <label for="burger_name">Burger Name</label>
+    <input type="text" class="form-control" id="burger_name" placeholder="Enter burger name!">
+    <button type="button" id="submit" class="btn btn-outline-success">Submit</button>
+  </div>
   <p>Enter the burger you want to eat! Click the "Submit" button.</p>
+</div>
 </div>
 
 <div class="container">

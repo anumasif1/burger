@@ -12,7 +12,7 @@ CREATE table burgers(
 -- devoured: a boolean.
 id int NOT NULL AUTO_INCREMENT,
 burger_name varchar (50) not null,
-devoured boolean,
+devoured boolean default false,
 Primary key (id)
 );
 

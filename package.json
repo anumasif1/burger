@@ -4,7 +4,8 @@
   "description": "This is a burger logger app with MySQL, Node, Express, Handlebars and a homemade ORM!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/anumasif1/burger#readme",
   "dependencies": {
+    "ajax": "0.0.4",
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "handlebars": "^4.1.2",

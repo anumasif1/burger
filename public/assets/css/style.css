@@ -6,6 +6,11 @@
     color: white;
 }
 
+#heading{
+  margin: 0 auto;
+  text-align: center;
+  color: red;
+}
 
 
 /* li {
