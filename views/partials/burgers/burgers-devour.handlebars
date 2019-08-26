@@ -1,11 +1,12 @@
-
-    <li>
-        {{burger_name}} <button class="devour-it" data-id="{{id}}" data-isdevoured="{{devoured}}">
-            {{#unless devoured}}Devour it!!{{/unless}}
-        </button>
-    </li>
-
-    {{!-- <li>
-         {{burger_name}}
-        {{#if devoured }} <b>{{burger_name}}</b>{{/if}}
-    </li> --}}
+<li class="alist">
+    <div class="alist row">
+        <div class="alist col-sm-8">
+            {{burger_name}}
+        </div>
+        <div class="col-sm-4">
+            <button class="devour-it btn btn-info" data-id="{{id}}" data-isdevoured="{{devoured}}">
+                {{#unless devoured}}Devour it!!{{/unless}}
+            </button>
+        </div>
+    </div>
+</li>

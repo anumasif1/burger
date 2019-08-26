@@ -1,16 +1,45 @@
-.body{
-    background-color: black;
+body{
+    background-image: url("/assets/images/food.png");
     margin: 0 auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     text-justify: auto;
-    color: white;
 }
 
 #heading{
   margin: 0 auto;
   text-align: center;
-  color: red;
+  color:#17a2b8;
+  margin-bottom: 25px;
+  padding: 20px;
 }
+
+.form-control{
+  background-color: antiquewhite;
+}
+
+.devoured-display{
+  color:#17a2b8!important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li{
+  margin-top: 5px !important;
+}
+
+.dlist{
+  text-align: center;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.alist{
+  text-align: justify;
+  margin-top: 10px;
+}
+
 
 
 /* li {

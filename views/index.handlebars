@@ -1,37 +1,45 @@
 <div class="container">
 
-  <h3 class="display-4" id="heading">Eat-Da-Burger!</h3>
+  <h1 class="display-1" id="heading"><b>Eat-Da-Burger!</b></h1>
 
-  <form class="create-form">
-    <div class="form-group">
-      <label for="burger_name">Burger Name</label>
-      <input type="text" class="form-control" id="burger_name" placeholder="Enter burger name!">
-      <button type="submit" class="btn btn-outline-success">Submit</button>
+  <div class="container mx-auto mt-40 p-20" style="width: 600px;">
+    <form class="create-form">
+      <div class="form-group">
+        <label for="burger_name"><b>Burger Name</b></label>
+        <input type="text" class="form-control w-70" id="burger_name" placeholder="Enter burger name!">
+        <p>Enter the burger you want to eat! Click the "Submit" button.</p>
+        <button type="submit" class="btn btn-outline-success">Submit</button>
+      </div>
+
+    </form>
+  </div>
+
+
+  <div class=" dlist container">
+    <div class="row mx-auto mx-md-n5">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5">
+        <div class="col-sm-12 text-center">
+        <h4 class="margin-auto"><b>Waiting to be devoured!</b></h4>
+        </div>
+        <ul>
+          {{#each burgers}}
+          {{#unless devoured}}
+          {{>burgers/burgers-devour devoured=false}}
+          {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
+      <div class="col-sm-5">
+        <h4><b>Devoured!</b></h4>
+        <ul class="devoured-display">
+          {{#each burgers}}
+          {{#if devoured}}
+          {{> burgers/burgers-devoured devoured=true}}
+          {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+      <div class="col-sm-1"></div>
     </div>
-    <p>Enter the burger you want to eat! Click the "Submit" button.</p>
-  </form>
-</div>
-
-<div class="container">
-  <div class="row">
-  <div class="col">
-    <ul>
-      {{#each burgers}}
-      {{#unless devoured}}
-      {{>burgers/burgers-devour devoured=false}}
-      {{/unless}}
-      {{/each}}
-    </ul>
   </div>
-
-  <div class="col">
-
-    {{#each burgers}}
-    {{#if devoured}}
-    {{> burgers/burgers-devoured devoured=true}}
-    {{/if}}
-    {{/each}}
-    </div>
-  </div>
-  </div>
-</div>
