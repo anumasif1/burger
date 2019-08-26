@@ -9,6 +9,7 @@ This is a burger logger app with MySQL, Node, Express, Handlebars and a homemade
 
 This application is base on MVC model. Following is the format for this app:
 
+<pre>
 -Burger\
     -config\
         -connection.js\
@@ -36,7 +37,7 @@ This application is base on MVC model. Following is the format for this app:
                 -burgers-devoured.handlebars
             -index.hanldebars
     -server.js
-
+</pre>
 **-------------------------------------------------------------------**
         -
     
