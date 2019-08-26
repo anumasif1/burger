@@ -40,6 +40,11 @@ li{
   margin-top: 10px;
 }
 
+img {
+  width: 150px;
+  height: auto;
+}
+
 
 
 /* li {
