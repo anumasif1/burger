@@ -5,7 +5,7 @@ This is a burger logger app with MySQL, Node, Express, Handlebars and a homemade
 
 ![Burger App display](webpage.png)
 
-**How it works?**
+**How it works?**\
 Customer can enter name of the burger he/she wants and press submit button. Once submitted, the name is updated in sql file **schema.sql**. The name is also displayed on the webpage along with **devour-it** button. This section is divide in 2 columns "Waiting to be devoured!" and "Devoured!". When the user clicks "devour-it" button that burger name is moved to "devoured!" section. Database is automatically updated with each action.  
 
 **-------------------------------------------------------------------**
@@ -41,7 +41,7 @@ This application is base on MVC model. Following is the format for this app:
             -index.hanldebars
     -server.js
 </pre>
-**-------------------------------------------------------------------**
+**-------------------------------------------------------------------**\
         -
 **NPM Packages Installed:**
 * express
