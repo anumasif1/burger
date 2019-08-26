@@ -9,10 +9,10 @@ This is a burger logger app with MySQL, Node, Express, Handlebars and a homemade
 
 This application is base on MVC model. Following is the format for this app:
 
--Burger
-    -config
-        -connection.js
-        -orm.js
+-Burger\
+    -config\
+        -connection.js\
+        -orm.js\
     -controllers
         -burgers_controller.js
     -db
