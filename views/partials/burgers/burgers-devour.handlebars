@@ -1,13 +1,11 @@
-<div>
+
     <li>
-        {{burger_name}}
-        <button class="devour-it" data-id="{{id}}" data-newlist="{{devoured}}">
+        {{burger_name}} <button class="devour-it" data-id="{{id}}" data-isdevoured="{{devoured}}">
             {{#unless devoured}}Devour it!!{{/unless}}
         </button>
     </li>
 
-    <li>
+    {{!-- <li>
          {{burger_name}}
         {{#if devoured }} <b>{{burger_name}}</b>{{/if}}
-    </li>
-</div>
+    </li> --}}
