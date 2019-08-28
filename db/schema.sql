@@ -18,3 +18,4 @@ Primary key (id)
 
 Select * from burgers;
 
+truncate table burgers
